@@ -1,0 +1,115 @@
+@greyColor: #979797;
+@lightColor: #fff;
+@secondColor: #76c38f;
+@bgHeader: #290000;
+
+.fullButton {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: @secondColor;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Georgia, sans-serif;
+    color: @lightColor;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 1fr 450px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header,
+main,
+footer {
+    padding: 46px 120px;
+}
+
+a {
+    text-decoration: none;
+    color: @lightColor;
+}
+
+header {
+    border-top: 10px solid @secondColor;
+    display: grid;
+    background: @bgHeader;
+    grid-template-columns: 1fr 2fr;
+    .logo {
+        p:first-child {
+            font-size: 28px;
+            font-weight: 400;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        p:last-child {
+            color: @greyColor;
+            font-size: 11px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+    }
+    .top-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            padding: 10px;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 400;
+            &:hover {
+                .fullButton;
+            }
+        }
+    }
+    .slider {
+        display: grid;
+        grid-template-columns: 1fr 10fr 10fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-items: center;
+        align-items: center;
+        a:first-child {
+            justify-self: start;
+        }
+        a:last-child {
+            justify-self: end;
+        }
+        .text-block {
+            width: 80%;
+            h1 {
+                font-size: 46px;
+                font-weight: 400;
+                line-height: 46px;
+            }
+            p {
+                width: 313px;
+                height: 71px;
+                color: @greyColor;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 19.2px;
+            }
+            a {
+                margin-top: 20px;
+                padding: 10px;
+                font-size: 13px;
+                .fullButton;
+            }
+        }
+    }
+}
+
+main {
+    background-color: #660000;
+}
+
+footer {
+    background-color: #ccc;
+}

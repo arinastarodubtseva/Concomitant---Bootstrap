@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url(../fonts/ArialMT.otf);
+}
+
+@font-face {
+    font-family: 'Social';
+    src: url(../fonts/Socialico.ttf);
+}
+
+@darkColor: #445162;
+@lightColor: #fff;
+@sectionDarkColor: #f5f5f5;
+@mainFont: 'Arial MT', sans-serif;
+@xxsFrom: 0;
+@xxsTo: 575px;
+@xsFrom: 576px;
+@xsTo: 767px;
+@smFrom: 768px;
+@smTo: 991px;
+@mdFrom: 992px;
+@mdTo: 1199px;
+@lgFrom: 1200px;
+.response(@device, @content) {
+    & when (@device =mobile) {
+        @media all and (max-width: @mdTo) {
+            @content();
+        }
+    }
+    & when (@device =phones) {
+        @media all and (max-width: @xxsTo) {
+            @content();
+        }
+    }
+    & when (@device =wide-phones) {
+        @media all and (max-width: @xsTo) {
+            @content();
+        }
+    }
+    & when (@device =tablets) {
+        @media all and  (max-width: @smTo) {
+            @content();
+        }
+    }
+    & when (@device =small-desktops) {
+        @media all and (max-width: @mdTo) {
+            @content();
+        }
+    }
+    & when (@device =lg-desktops) {
+        @media all and (min-width: @lgFrom) {
+            @content();
+        }
+    }
+}
+
+.respondCustom(@_minWidth, @_maxWidth, @_styles) {
+    @media all and (min-width: @_minWidth) and (max-width: @_maxWidth) {
+        @_styles();
+    }
+}
+
+.sectionStylesMixin() {
+    padding: 50px;
+    .respondCustom(@xxsFrom, @xsTo, {
+        padding: 15px;
+    }
+    );
+}
+
+.sectionHeaderStylesMixin() {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: @darkColor;
+    text-align: center;
+}

@@ -1,0 +1,403 @@
+@font-face {
+    font-family: 'Arial MT';
+    src: url(fonts/ArialMT.otf);
+}
+
+@font-face {
+    font-family: 'Social';
+    src: url(fonts/Socialico.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    font-size: 55px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+h2 {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #5d6875;
+}
+
+p,
+li {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+body {
+    font-family: "Arial MT", sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.block {
+    padding: 5%;
+}
+
+header {
+    justify-content: space-between;
+    background-color: #445162;
+    color: #ffffff;
+}
+
+header .text ul {
+    margin-left: 35px;
+}
+
+header .text ul li {
+    list-style-image: url(../img/check_icon.png)
+}
+
+@media (min-width: 959px) {
+    .logo {
+        text-align: right;
+    }
+}
+
+.about {
+    justify-content: space-between;
+}
+
+.about .text {
+    text-align: justify;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.about .img {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .about .img,
+    .about h2 {
+        text-align: center;
+    }
+}
+
+.pluses {
+    background-color: #f5f5f5;
+}
+
+.pluses h2 {
+    text-align: center;
+}
+
+.pluses ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pluses ul li {
+    font-size: 16px;
+    background-image: url(../img/plus.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 35px;
+    padding-left: 40px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.scrinshots h2 {
+    text-align: center;
+}
+
+.scrinshots .item h3 {
+    font-size: 24px;
+    color: #55616f;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.scrinshots .item p {
+    line-height: 23px;
+    font-size: 16px;
+}
+
+.scrinshots .item .img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 575px) {
+    .scrinshots .item .img,
+    .scrinshots .item h3 {
+        float: none;
+        text-align: center;
+    }
+}
+
+.reviews {
+    background-color: #f5f5f5;
+}
+
+.reviews h2 {
+    text-align: center;
+}
+
+.reviews .item {
+    margin-top: 25px;
+    display: flex;
+}
+
+.reviews .img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-image: url(../img/face.jpg);
+}
+
+.reviews .item p {
+    background-color: #ebebeb;
+    padding: 16px 15px;
+    color: #333333;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.reviews .item p::before {
+    content: "";
+    float: left;
+    margin-left: -32px;
+    width: 0;
+    height: 0;
+    margin-top: 10px;
+    border-top: 12px solid transparent;
+    border-right: 17px solid #ebebeb;
+    border-bottom: 12px solid transparent;
+}
+
+.reviews a {
+    display: block;
+    margin-top: 10px;
+    color: #989898;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.by_it h2 {
+    text-align: center;
+}
+
+.buy {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.price {
+    padding: 10px;
+    width: 285px;
+    background-color: #445162;
+}
+
+@media (max-width: 959px) {
+    .price {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .price {
+        width: 100%;
+        margin-left: 10%;
+    }
+}
+
+.price ol {
+    margin-left: 15px;
+}
+
+.price li {
+    list-style-type: decimal;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.price h3 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.dollar {
+    font-size: 40px;
+    line-height: 70px;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #445162;
+    color: #445162;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #445161;
+}
+
+.button:active {
+    outline: none;
+}
+
+.contacts {
+    justify-content: center;
+    background-color: #445162;
+    margin-top: 50px;
+}
+
+.contacts h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.contacts .left input,
+.contacts .left textarea {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    color: #445162;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contacts .left textarea {
+    padding-top: 10px;
+}
+
+.contacts .left input {
+    height: 40px;
+}
+
+.contacts .left input:last-child {
+    width: 140px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.contacts .right {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.contacts .right ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .contacts .right ul,
+    .contacts .social-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.contacts .right li {
+    margin-top: 18px;
+    padding: 0 30px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+}
+
+.contacts .right li:nth-child(2) {
+    background-position: 0 -44px;
+}
+
+.contacts .right li:nth-child(3) {
+    background-position: 0 -88px;
+}
+
+.contacts .right li:nth-child(4) {
+    background-position: 0 -132px;
+}
+
+.contacts .right .social-links {
+    display: flex;
+}
+
+.social-icon {
+    text-decoration: none;
+    font-style: normal;
+    color: #fff;
+    font-size: 55px;
+    font-family: "Social", sans-serif;
+}
+
+.social-icon:hover {
+    text-decoration: none;
+    color: darkgray;
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #445161;
+}
+
+@media (max-width: 959px) {
+    p,
+    li {
+        font-size: 80%!important;
+    }
+    h1 {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+Серия скринкастов об оформлении кода
+	https://www.youtube.com/watch?v=vkGRg0xbE48&list=PLYVl8v9p8yrE1Tb5rZwQ2x6fJhHiRp-LY
+
+Less
+	http://lesscss.org/
+
+Генератор градиентов
+	http://www.colorzilla.com/gradient-editor/
+
+Koala
+	http://koala-app.com/
+
+Бутстрап
+	https://getbootstrap.com/docs/3.3/
+
+Версия этого урока, с использованием LESS
+	https://youtu.be/e8wzsut_YyU?t=3685
